@@ -1,56 +1,52 @@
-# Bootcamp Mission 06 - X-Ray 폐렴 이미지 분류
+# Chest X-Ray Pneumonia Classification
 
-## 1. 개요
-흉부 X-Ray 이미지를 기반으로 폐렴 여부를 분류하는 CNN/전이학습 미션입니다.
+> **Bootcamp Mission 06** | Computer Vision
 
-## 2. 목표
-이미지 분류 모델을 학습하고 Feature Extraction, Fine-Tuning, XAI 기법을 비교하는 것을 목표로 했습니다.
+## 미션 소개
+흉부 X-Ray 이미지를 바탕으로 폐렴 여부를 분류하는 컴퓨터 비전 미션입니다. 의료 영상 분류의 기본 파이프라인을 따라 데이터 준비, 모델 학습, 예측 결과 확인을 수행합니다.
 
-## 3. 사용 기술
+## 구현 목표
+- 이미지 분류 데이터의 구조를 이해한다.
+- X-Ray 이미지 분류 모델의 학습 흐름을 구현한다.
+- 분류 결과를 통해 모델의 한계와 주의점을 인식한다.
+
+## 주요 구현 내용
+- X-Ray 이미지 전처리
+- 폐렴 여부 이진 분류
+- 학습 및 예측 결과 확인
+
+## 사용 기술
 - Python
-- numpy
-- matplotlib
-- scikit-learn
-- opencv-python
-- Pillow
-- torch
-- torchvision
-- kagglehub
-- grad-cam
+- Deep Learning
+- Computer Vision
+- Jupyter Notebook
 
-## 4. 주요 기능
-- X-Ray 이미지 데이터 준비
-- CNN 모델 학습
-- 전이학습 및 Fine-Tuning
-- Grad-CAM 기반 설명 가능성 확인
-
-## 5. 실행 방법
-```bash
+## 실행 방법
+`ash
 pip install -r requirements.txt
 jupyter notebook notebooks/mission06.ipynb
-```
+`
 
-## 6. 주요 파일
-- `notebooks/mission06.ipynb`
+> 데이터셋 또는 사전학습 모델이 외부에서 제공되는 경우, 실행 전에 노트북 또는 코드의 데이터 로드 설정을 확인해야 합니다.
 
-## 7. 폴더 구조
-```text
-bootcamp-mission-06
-  .gitignore
-  notebooks/
-    mission06.ipynb
-  README.md
-  requirements.txt
-```
+## 폴더 구조
+`	ext
+notebooks/
+  mission06.ipynb
+README.md
+requirements.txt
+.gitignore
+`
 
-## 8. 학습 내용
-의료 이미지 분류에서 전처리, 모델 학습 전략, 설명 가능한 AI 기법의 활용을 학습했습니다.
+## 학습 내용
+- 의료 이미지 결과는 학습용 실습 결과이며 실제 진단 도구로 사용할 수 없다는 점
+- 클래스 불균형과 데이터 품질이 모델 해석에 중요하다는 점
 
-## 9. 트러블슈팅
-미션을 진행하며 발생한 오류와 해결 과정은 노트북 또는 보고서에 정리했습니다.
+## 트러블슈팅 및 재현 시 참고 사항
+이미지 경로와 실행 출력에 남은 로컬 환경 정보는 배포 환경에 맞춰 별도로 정리할 수 있습니다.
 
-## 10. 결과 화면
-결과 이미지는 노트북 출력, 보고서 또는 `images/` 폴더에서 확인할 수 있습니다.
+## 결과 확인
+학습 과정과 분류 결과는 노트북에서 확인할 수 있습니다.
 
-## 11. 공개 전 확인 사항
-- 제출 노트북만 포함했으며, 원본 데이터와 모델 파일은 공개 범위 확인 전 포함하지 않았습니다.
+## 포트폴리오 관점
+이 저장소는 **Computer Vision** 역량을 학습·실험한 결과물입니다. 구현 범위와 실행 조건은 코드 및 노트북을 기준으로 확인할 수 있습니다.
