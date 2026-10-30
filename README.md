@@ -22,21 +22,21 @@
 - Jupyter Notebook
 
 ## 실행 방법
-`ash
+```bash
 pip install -r requirements.txt
 jupyter notebook notebooks/mission06.ipynb
-`
+```
 
 > 데이터셋 또는 사전학습 모델이 외부에서 제공되는 경우, 실행 전에 노트북 또는 코드의 데이터 로드 설정을 확인해야 합니다.
 
 ## 폴더 구조
-`	ext
+```text
 notebooks/
   mission06.ipynb
 README.md
 requirements.txt
 .gitignore
-`
+```
 
 ## 학습 내용
 - 의료 이미지 결과는 학습용 실습 결과이며 실제 진단 도구로 사용할 수 없다는 점
